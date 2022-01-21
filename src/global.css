@@ -1,0 +1,16 @@
+@import '@picocss/pico';
+
+header {
+  padding-top: var(--block-spacing-vertical);
+}
+footer {
+  padding-bottom: var(--block-spacing-vertical);
+}
+
+a[aria-current="page"] {
+  --background-color: var(--primary-focus);
+}
+
+nav li:not(:last-child) {
+  margin-right: 0.5rem;
+}

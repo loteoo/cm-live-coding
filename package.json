@@ -1,0 +1,48 @@
+{
+  "name": "boilerplate-directus",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "npm run dev:app",
+    "dev:app": "vite",
+    "dev:api": "nodemon",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "db:migrate:make": "knex --knexfile db/knexfile.js migrate:make",
+    "db:seed:make": "knex --knexfile db/knexfile.js seed:make",
+    "db:migrate": "knex --knexfile db/knexfile.js migrate:latest",
+    "db:rollback": "knex --knexfile db/knexfile.js migrate:rollback",
+    "db:seed": "knex --knexfile db/knexfile.js seed:run",
+    "test": "jest -c"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "^10.1.1",
+    "@picocss/pico": "^1.4.4",
+    "@types/koa__router": "^8.0.11",
+    "knex": "^1.0.1",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-logger": "^3.2.1",
+    "objection": "^3.0.1",
+    "pg": "^8.7.1",
+    "qs": "^6.10.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.1"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^12.1.2",
+    "@types/mocha": "^9.1.0",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@vitejs/plugin-react": "^1.0.7",
+    "jest": "^27.4.7",
+    "jest-runner-tsc": "^1.6.0",
+    "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5",
+    "react-test-renderer": "^17.0.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2"
+  }
+}
